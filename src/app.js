@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {name:"Buy Shopping", isComplete: true},
         {name: "Clean Bathroom", isComplete: false},
         {name: "Cars MOT", isComplete: false},
-        {name: "Bath Dog", isComplete: false}
+        {name: "Bath Dog", isComplete: false},
+        {name: "Gardening", isComplete: false}
       ],
       newChore: { name: ""}
     },
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       completeChore: function(index) {
         this.chores[index].isComplete = true;
-      }  
+      }
     }
   });
 });

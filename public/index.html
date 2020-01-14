@@ -17,7 +17,7 @@
     <ul>
       <li v-for="(chore, index) in chores" v-bind:class="chore.isComplete ? 'complete' : 'incomplete'">
         <span>{{ chore.name }}</span>
-        <span v-if="chore.isComplete">Complete!</span>
+        <span v-if="chore.isComplete">Chore Completed!</span>
         <button v-if="!chore.isComplete" v-on:click="completeChore(index)">Still to Complete</button>
       </li>
     </ul>
